@@ -1,0 +1,16 @@
+{
+  "name": "test-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss public/css/tailwind.css -o public/css/app.css --watch"
+  },
+  "author": "caleb russel <calebrussel77@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}

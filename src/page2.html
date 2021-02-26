@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/app.css" />
+    <title>Html Tenplates</title>
+  </head>
+  <body>
+    <main
+      class="my-16 max-w-screen-xl px-4 h-screen mx-auto text-gray-900 antialiased"
+    >
+      <header
+        class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center"
+      >
+        <img
+          src="../public/assets/icones/logo.png"
+          alt="logo al firdaws"
+          class="h-28 w-auto"
+        />
+        <!-- Navigation Component -->
+        <nav class="flex flex-wrap -mx-3 pt-12 flex-grow">
+          <a
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-6 flex flex-col mb-8 items-start"
+          >
+            <div class="flex flow-row space-x-2 items-center">
+              <img
+                src="../public/assets/icones/homme.png"
+                alt="homme"
+                class="h-10 w-auto"
+              />
+              <p class="text-gray-900 whitespace-nowrap font-semibold">
+                1. Souscripteur
+              </p>
+            </div>
+            <span
+              class="inline-block bg-blue-600 h-4 w-full shadow-md rounded-sm mt-2"
+            />
+          </a>
+
+          <a
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-6 flex flex-col mb-8 items-start"
+          >
+            <div class="flex flow-row space-x-2 items-center">
+              <img
+                src="../public/assets/icones/auto.png"
+                alt="homme"
+                class="h-10 w-auto"
+              />
+              <p class="text-gray-900 whitespace-nowrap font-semibold">
+                2. Véhicule
+              </p>
+            </div>
+            <span
+              class="inline-block bg-gray-100 h-4 w-full shadow-md rounded-sm mt-2"
+            />
+          </a>
+
+          <a
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-6 flex flex-col mb-8 items-start"
+          >
+            <div class="flex flow-row space-x-2 items-center">
+              <img
+                src="../public/assets/icones/devis.jpg"
+                alt="homme"
+                class="h-10 w-auto"
+              />
+              <p class="text-gray-900 whitespace-nowrap font-semibold">
+                3. Devis
+              </p>
+            </div>
+            <span
+              class="inline-block bg-gray-100 h-4 w-full shadow-md rounded-sm mt-2"
+            />
+          </a>
+          <a
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-6 flex flex-col mb-8 items-start"
+          >
+            <div class="flex flow-row space-x-2 items-center">
+              <img
+                src="../public/assets/icones/validation.jpg"
+                alt="homme"
+                class="h-10 w-auto"
+              />
+              <p class="text-gray-900 whitespace-nowrap font-semibold">
+                4. Validation
+              </p>
+            </div>
+            <span
+              class="inline-block bg-gray-100 h-4 w-full shadow-md rounded-sm mt-2"
+            />
+          </a>
+        </nav>
+        <!-- End Navigation Component -->
+      </header>
+
+      <!-- main action section -->
+      <div
+        class="flex lg:flex-row mx-auto px-3 mt-5 flex-grow flex-col-reverse pb-32 items-start"
+      >
+        <div class="flex-grow lg:w-3/4 px-3">
+          <p class="font-semibold text-xl mt-3">
+            C’est noté, vous souhaitez votre assurance Amana automobile pour le
+            [02/03/2021]
+          </p>
+          <p class="font-bold text-2xl mt-6">
+            A présent, faisons connaissance !
+          </p>
+
+          <!-- Form section  -->
+          <form action="#" lang="fr">
+            <div class="pt-10 mx-auto px-6 flex flex-col space-y-4">
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="whitespace-nowrap font-semibold text-lg w-1/4"
+                  >Vous êtes *:</label
+                >
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    value="Monsieur"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                  <svg
+                    class="w-6 h-6 absolute right-4 top-2 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="font-semibold text-lg md:w-1/4 text-left"
+                  >Votre nom *:</label
+                >
+                <div class="w-full">
+                  <input
+                    type="text"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="font-semibold text-lg md:w-1/4 text-left"
+                  >Votre prénom *:</label
+                >
+                <div class="w-full">
+                  <input
+                    type="text"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="font-semibold text-lg md:w-1/4 text-left"
+                  >Votre mobile *:</label
+                >
+                <div class="w-full">
+                  <input
+                    type="number"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="font-semibold text-lg md:w-1/4 text-left"
+                  >Votre e-mail *:</label
+                >
+                <div class="w-full">
+                  <input
+                    type="email"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col space-y-3 md:flex-row md:items-center md:space-x-10 md:space-y-0"
+              >
+                <label
+                  for="name"
+                  class="font-semibold text-lg md:w-1/4 text-left"
+                  >Confirmation e-mail *:</label
+                >
+                <div class="w-full">
+                  <input
+                    type="email"
+                    class="px-3 py-2 w-full border focus:outline-none focus:ring-1 focus:ring-blue-400"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- End Form section  -->
+          <div class="mt-10 w-full flex justify-center flex-row items-center">
+            <a
+              href="/src/page3.html"
+              class="bg-blue-600 text-white font-bold px-4 py-2 rounded-md w-1/3 hover:bg-blue-500 text-center"
+            >
+              Continuer
+            </a>
+          </div>
+        </div>
+        <!-- Aside component  -->
+        <div
+          class="lg:w-1/4 flex flex-row items-center space-x-3 mx-auto mb-10 lg:mb-0 px-4"
+        >
+          <img
+            src="../public/assets/icones/26438035.jpg"
+            alt=""
+            class="h-16 w-16"
+          />
+          <div>
+            <button
+              class="bg-blue-600 text-white py-2 px-6 text-lg font-semibold rounded-md shadow-md hover:bg-blue-500"
+            >
+              Être rappelé <br />
+              gratuitement
+            </button>
+          </div>
+        </div>
+        <!-- End Aside component  -->
+      </div>
+      <!-- End main action section -->
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <script src="../public/js/app.js"></script>
+  </body>
+</html>
